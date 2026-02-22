@@ -89,11 +89,11 @@ export function LanguageSwitcher({
       <Button
         variant="ghost"
         size="sm"
-        className="hidden md:flex items-center space-x-1"
+        className="hidden flex items-center md:space-x-1"
         onClick={() => setIsOpen(!isOpen)}
       >
         <Globe className="w-4 h-4" />
-        <span>{currentLanguage.code.toUpperCase()}</span>
+        <span className="mt-0.5">{currentLanguage.code.toUpperCase()}</span>
       </Button>
 
       {isOpen && (

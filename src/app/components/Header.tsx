@@ -150,7 +150,7 @@ export function Header({
                   {item.name}
                 </button>
               ))}
-              <LanguageSwitcher variant="mobile" />
+              {/* <LanguageSwitcher variant="mobile" /> */}
             </div>
           </div>
         )}

@@ -140,14 +140,15 @@ export function Footer() {
             </p>
             <div className="flex space-x-6 text-sm text-gray-700">
               <a
-                href="#"
-                className="hover:text-primary transition-colors"
+                href="#privacy-policy"
+                target="_blank"
+                className="hover:text-secondary transition-colors"
               >
                 {t("footer.privacy")}
               </a>
               <a
                 href="#"
-                className="hover:text-primary transition-colors"
+                className="hover:text-secondary transition-colors"
               >
                 {t("footer.terms")}
               </a>

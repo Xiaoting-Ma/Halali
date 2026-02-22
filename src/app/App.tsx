@@ -12,6 +12,7 @@ import { AboutPage } from "@/app/components/AboutPage";
 import { CareersPage } from "@/app/components/CareersPage";
 import { CareerSuccessPage } from "@/app/components/CareerSuccessPage";
 import { ContactPage } from "@/app/components/ContactPage";
+import { PrivacyPolicyPage } from "@/app/components/PrivacyPolicyPage";
 import { LanguageProvider } from "@/app/contexts/LanguageContext";
 import { SearchModal } from "@/app/components/SearchModal";
 
@@ -113,6 +114,8 @@ export default function App() {
           return <CareerSuccessPage onNavigate={navigate} />;
         case "contact":
           return <ContactPage onNavigate={navigate} />;
+        case "privacy-policy":
+          return <PrivacyPolicyPage />;
         default:
           return <HomePage onNavigate={navigate} />;
       }
@@ -157,13 +160,15 @@ export default function App() {
     <LanguageProvider>
       <HelmetProvider>
         <div className="min-h-screen flex flex-col bg-white">
-          <Header
-            currentPage={currentPage}
-            onNavigate={navigate}
-            onOpenSearch={() => setIsSearchOpen(true)}
-          />
+          {currentPage !== "privacy-policy" && (
+            <Header
+              currentPage={currentPage}
+              onNavigate={navigate}
+              onOpenSearch={() => setIsSearchOpen(true)}
+            />
+          )}
           <main className="flex-1">{renderPage()}</main>
-          <Footer />
+          {currentPage !== "privacy-policy" && <Footer />}
           <SearchModal
             isOpen={isSearchOpen}
             onClose={() => setIsSearchOpen(false)}
