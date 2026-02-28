@@ -15,8 +15,8 @@ export const zh = {
 
   // Footer
   footer: {
-    tagline: '全球首个纯清真外卖平台。',
-    slogan: '让清真饮食更简单。从餐桌到日常——吃得更好，活得更精彩。',
+    tagline: '全球首个全清真外卖平台。',
+    slogan: '让清真饮食更简单。从餐桌到日常——吃得更好， 生活得更精彩。',
     quickLinks: '快速链接',
     contact: '联系方式',
     business: '商务合作：',
@@ -34,8 +34,8 @@ export const zh = {
     heroTitle: '全球第一',
     heroSubtitle: '外卖平台',
     heroSubtitleHighlight: '清真美食',
-    heroDescription: '100% 纯清真。',
-    heroDescriptionLine2: '无混合厨房，无仅部分清真。',
+    heroDescription: '100% 全清真。',
+    heroDescriptionLine2: '无混合厨房。',
     heroDescriptionLine3: '实地验证',
     downloadApp: '下载 App',
     joinMerchant: '成为合作商家',
@@ -49,12 +49,12 @@ export const zh = {
 
     // Verification Section
     whyHalali: '为什么选择 Halali',
-    whyHalaliSubtitle: '纯清真，',
+    whyHalaliSubtitle: '全清真，',
     whyHalaliSubtitleHighlight: '100%',
     verifiedOnSite: '现场验证。',
     realKitchens: '真实厨房，真实团队。',
-    verificationPoint1: '仅限纯清真餐厅',
-    verificationPoint2: '无仅部分清真，无混合厨房',
+    verificationPoint1: '仅限全清真餐厅',
+    verificationPoint2: '无混合厨房',
     verificationPoint3: '由',
     verificationPoint3Highlight: 'Halali 团队实地审核',
     verificationPoint4: '定期复查',
@@ -92,9 +92,9 @@ export const zh = {
 
     // Infrastructure Section
     infrastructureTitle1: '我们构建的是',
-    infrastructureTitle2: '基础设施，',
+    infrastructureTitle2: '完整的平台，',
     infrastructureTitle3: '而非仅仅一个',
-    infrastructureTitle4: '交易市场。',
+    infrastructureTitle4: '展示的交易市场。',
     infrastructureSubtitle: '一个让所有人共赢的系统。',
     infrastructureDescription1: 'Halali 是一个完整的系统，将用户、清真商家和骑手连接成一个可信赖的网络。',
     infrastructureDescription2: '每个角色都受益于清晰的标准、透明的运营和共同的成长——为所有参与者创造价值，而非仅一方。',
@@ -108,13 +108,13 @@ export const zh = {
     // About Section
     aboutTitle: '关于 Halali',
     aboutMissionTitle: '我们的使命是让清真餐饮变得透明、可信且触手可及。',
-    aboutMissionDescription1: '作为全球首个完整的纯清真食品外卖平台，Halali 致力于通过技术、团队和责任感，用清晰取代不确定，用验证取代猜测。',
-    aboutMissionDescription2: '信任不是一个功能，而是基石。',
+    aboutMissionDescription1: '作为全球首个完整的全清真食品外卖平台，Halali 致力于通过技术、团队和责任感，用清晰取代不确定，用验证取代猜测。',
+    aboutMissionDescription2: '信任不仅是一个软件功能，而是一切的基础。',
     aboutFeature1Title: '清真信息透明，绝无隐瞒',
     aboutFeature1Description: '经过验证的清真细节会经过审核、清晰展示，一目了然。',
-    aboutFeature2Title: '专业易用的软件',
+    aboutFeature2Title: '专业好用的软件',
     aboutFeature2Description: '为用户、商家、骑手及 POS 系统打造的端到端完整平台。',
-    aboutFeature3Title: '真实团队，全天候支持',
+    aboutFeature3Title: '客服全天候支持',
     aboutFeature3Description: '由我们本地的内部团队提供支持。',
     aboutFeature4Title: '安全支付，防欺诈保护',
     aboutFeature4Description: '与行业信赖的合作伙伴共同构建。',
@@ -128,12 +128,12 @@ export const zh = {
     downloadsSubtitle: '下载 Halali',
     downloadsDescription1: 'Halali 提供透明的清真验证标识、专属优惠、实时订单追踪和全天候客服。',
     downloadsDescription2: '以信任、透明和专业为核心设计。',
-    downloadsDescription3: 'Halali 让您的清真饮食更简单，助您吃得更好，活得更精彩。',
+    downloadsDescription3: 'Halali 让您的清真饮食更简单，助您吃得更好， 生活得更精彩。',
     qrCodePlaceholder: '扫描二维码',
 
     // Search Modal content
     whatWeDoTitle: 'Halali 的使命',
-    whatWeDoPara1: '全球首个仅提供纯清真食品的外卖平台。',
+    whatWeDoPara1: '全球首个仅提供全清真食品的外卖平台。',
     whatWeDoPara3: '无猪肉，无混合厨房，无非清真成分，无需猜疑。只有经过验证的清真厨房，只有您可信赖的美食。',
 
     whyHalaliTitle: '为什么选择 Halali？',
@@ -147,7 +147,7 @@ export const zh = {
     feature4Desc: 'Halali 不仅是一个 App，更是一个完整的生态系统——用户、商家、骑手，均由我们自有的内部系统和管理平台驱动。我们为规模、安全和可靠性而设计，数据受到保护，支付基础设施由长期合作的银行与支付伙伴支持，稳定可靠。表面体验流畅，底层系统坚实。',
 
     downloadsTitle: '下载中心',
-    userAppDesc: '浏览纯清真餐厅，外卖或自取，真实的清真信息透明展示。',
+    userAppDesc: '浏览全清真餐厅，外卖或自取，真实的清真信息透明展示。',
     partnerAppTitle: '商家 App',
     partnerAppDesc: '管理订单、菜单，追踪营收。',
     riderAppTitle: '骑手 App',
@@ -165,7 +165,7 @@ export const zh = {
     joinUsRidersTitle: '加入 Halali 骑手团队',
     joinUsRidersDesc: '享受灵活的工作时间，成为全球领先清真外卖平台的一员！我们提供支持，助您轻松启程。',
     joinUsRidersButton: '成为骑手',
-    joinUsCareersTitle: '发现 Halali 全球团队的精彩职位',
+    joinUsCareersTitle: '发现 Halali 全球团队的职位',
     joinUsCareersDesc: '寻找新机会，展现您的专长，与我们充满活力的团队共同成长。',
     joinUsCareersButton: '查看职位',
   },
@@ -186,7 +186,7 @@ export const zh = {
   // Merchants Page
   merchants: {
     heroTitle: '成为 Halali 合作餐厅',
-    heroSubtitle: '触达全城更多顾客，加入首个纯清真外卖平台。',
+    heroSubtitle: '触达全城更多顾客，加入首个全清真外卖平台。',
     joinNow: '立即加入',
     onboardingTitle: '入驻流程（三步）',
     onboardingStep1Title: '联系我们',
@@ -290,17 +290,17 @@ export const zh = {
   // About Page
   about: {
     heroTitle: '关于 Halali',
-    heroSubtitle: '全球首个纯清真外卖平台',
+    heroSubtitle: '全球首个全清真外卖平台',
     whoWeAreTitle: '我们是谁',
     foundationTitle: '我们的根基',
-    foundationDesc: 'Halali 是全球首个纯清真外卖平台，总部位于澳大利亚悉尼，目前业务覆盖全澳。',
+    foundationDesc: 'Halali 是全球首个全清真外卖平台，总部位于澳大利亚悉尼，目前业务覆盖全澳。',
     teamTitle: '我们的团队',
     teamDesc: '我们的团队由来自九个国家的企业家、工程师、风险投资家、运营专家和伊斯兰社会学者组成。',
     visionTitle: '我们的愿景',
     vision1: '让寻找、订购和配送清真食品变得更简单、更可信。',
     vision2: '帮助清真小企业发展壮大，更具竞争力。',
     valuesTitle: '我们的价值观',
-    value1Title: '纯清真',
+    value1Title: '全清真',
     value1Desc: '完整的清真生态系统',
     value2Title: '透明',
     value2Desc: '公开、诚实的运营',
@@ -350,7 +350,7 @@ export const zh = {
     security3: '不出售用户信息',
     security4: '完全遵守澳大利亚隐私法',
     missionTitle: '让我们的清真饮食更简单',
-    missionSubtitle: '从餐桌到日常——吃得更好，活得更精彩。',
+    missionSubtitle: '从餐桌到日常——吃得更好， 生活得更精彩。',
   },
 
   // Business Page
@@ -405,7 +405,7 @@ export const zh = {
     position2Req2: '出色的组织能力',
     position2Req3: '有非营利组织或社区工作经验者优先',
     position3Title: '配送运营专员',
-    position3Location: '悉尼、墨尔本 / 可远程灵活办公',
+    position3Location: '悉尼、墨尔本、可远程灵活办公',
     position3Type: '全职',
     position3Desc: '负责本地外卖骑手的招募、培训及协调工作。',
     position3Req1: '出色的组织协调能力',

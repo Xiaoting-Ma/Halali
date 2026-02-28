@@ -194,14 +194,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 size="lg"
                 variant="outline"
                 onClick={() => onNavigate("home#downloads")}
-                className="bg-primary border-2 border-primary text-gray-800 hover:bg-transparent hover:border-gray-700 text-lg px-8"
+                className="bg-primary border-2 border-primary text-gray-900 hover:bg-transparent hover:border-gray-100 hover:text-white text-lg px-8"
               >
                 {t("home.downloadApp")}
               </Button>
               <Button
                 size="lg"
                 onClick={() => onNavigate("merchants")}
-                className="bg-gray-900 border-2 border-gray-900 text-white hover:bg-transparent hover:border-gray-700 hover:text-gray-800 text-lg px-8"
+                className="bg-gray-900 border-2 border-gray-900 text-white hover:bg-transparent hover:border-gray-100 hover:text-white text-lg px-8"
               >
                 {t("home.joinMerchant")}
               </Button>
@@ -723,89 +723,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   className="absolute top-0 left-0 w-full h-full pointer-events-none"
                   viewBox="0 0 400 320"
                 >
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
-                  <defs>
-                    <marker>
-                      <polygon></polygon>
-                    </marker>
-                  </defs>
+    
                   <defs>
                     <marker
                       id="arrowhead-cycle"
@@ -821,41 +739,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
                       />
                     </marker>
                   </defs>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
+
                   {/* Arrow 1: Customers → Merchants (top to bottom right) */}
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
                   <path
                     d="M 230 125 L 280 195"
                     stroke="white"
@@ -865,13 +750,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
                     markerEnd="url(#arrowhead-cycle)"
                   />
                   {/* Arrow 2: Merchants → Riders (bottom right to bottom left) */}
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
-                  <path></path>
                   <path
                     d="M 240 260 L 160 260"
                     stroke="white"
@@ -892,7 +770,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </svg>
 
                 {/* Center - Halali Network Label */}
-                <div className="absolute top-38 md:top-48 left-1/2 -translate-x-1/2 text-center">
+                <div className="absolute top-40 md:top-48 left-1/2 -translate-x-1/2 text-center">
                   <p className="text-white font-bold text-xl">
                     {t('home.infrastructureNetwork')}
                   </p>
@@ -950,7 +828,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 {t("home.infrastructureSubtitle")}
               </p>
 
-              <div className="text-base md:text-lg text-white/90 leading-tight">
+              <div className="text-base md:text-lg text-white/90">
                 <p>
                   {t("home.infrastructureDescription1")}
                   <br />
@@ -1037,10 +915,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </div>
               </div>
               <div className="flex-1">
-                <h4 className="text-base md:text-lg font-bold text-gray-900">
+                <h4 className="mt-2 text-base md:text-lg font-bold text-gray-900">
                   {t("home.aboutFeature1Title")}
                 </h4>
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-base text-gray-700 leading-tight">
                   {t("home.aboutFeature1Description")}
                 </p>
               </div>
@@ -1060,10 +938,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </div>
               </div>
               <div className="flex-1">
-                <h4 className="text-base md:text-lg font-bold text-gray-900">
+                <h4 className="mt-2 text-base md:text-lg font-bold text-gray-900">
                   {t("home.aboutFeature2Title")}
                 </h4>
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-base text-gray-700 leading-tight">
                   {t("home.aboutFeature2Description")}
                 </p>
               </div>
@@ -1083,10 +961,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </div>
               </div>
               <div className="flex-1">
-                <h4 className="text-base md:text-lg font-bold text-gray-900">
+                <h4 className="mt-2 text-base md:text-lg font-bold text-gray-900">
                   {t("home.aboutFeature3Title")}
                 </h4>
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-base text-gray-700 leading-tight">
                   {t("home.aboutFeature3Description")}
                 </p>
               </div>
@@ -1106,10 +984,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </div>
               </div>
               <div className="flex-1">
-                <h4 className="text-base md:text-lg font-bold text-gray-900">
+                <h4 className="mt-2 text-base md:text-lg font-bold text-gray-900">
                   {t("home.aboutFeature4Title")}
                 </h4>
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-base text-gray-700 leading-tight">
                   {t("home.aboutFeature4Description")}
                 </p>
               </div>
@@ -1131,18 +1009,18 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <img
               src={logoAirwallex}
               alt="Airwallex"
-              className="h-6 md:h-10 w-auto object-contain"
+              className="h-4 md:h-6 w-auto object-contain"
             />
           </div>
         </div>
       </section>
 
-      {/* How to Use the Halali App Section */}
+      {/* Download Section image */}
       <section className="relative w-full">
         {/* Background Image */}
         <img
           src={image_cd2c41931df388104969a6c1fbbfa92c07870ffe}
-          alt="How to use the Halali app"
+          alt="How to download the Halali app"
           className="w-full h-[120px] md:h-[200px] object-cover"
         />
         {/* Title Overlay - Left Center (Vertically Centered) */}
@@ -1180,7 +1058,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
               {/* Description Text */}
               <div className="text-gray-700 mb-4">
-                <p className="text-base md:text-lg leading-tight">
+                <p className="text-base md:text-lg">
                   {t('home.downloadsDescription1')}
                   <br />
                   {t('home.downloadsDescription2')}

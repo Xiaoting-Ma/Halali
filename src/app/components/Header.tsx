@@ -51,7 +51,7 @@ export function Header({
     { name: t("header.merchants"), href: "merchants" },
     { name: t("header.riders"), href: "riders" },
     { name: t("header.business"), href: "business" },
-    { name: t("header.about"), href: "about" },
+    // { name: t("header.about"), href: "about" },
     { name: t("header.careers"), href: "careers" },
     { name: t("header.contact"), href: "contact" },
   ];
@@ -150,7 +150,6 @@ export function Header({
                   {item.name}
                 </button>
               ))}
-              {/* <LanguageSwitcher variant="mobile" /> */}
             </div>
           </div>
         )}

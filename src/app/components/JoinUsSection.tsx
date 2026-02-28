@@ -87,7 +87,7 @@ export function JoinUsSection({
               </p>
               <div className="flex items-center justify-between">
                 <button
-                  className="bg-secondary text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-full border-2 border-secondary font-semibold hover:border-gray-900 hover:bg-transparent transition-all duration-300"
+                  className="bg-secondary text-gray-900 text-sm md:text-base px-4 md:px-6 py-2 md:py-3 rounded-full border-2 border-secondary font-semibold hover:border-gray-900 hover:bg-transparent transition-all duration-300"
                   onClick={() =>
                     onNavigate("merchants#application-form")
                   }
@@ -130,7 +130,7 @@ export function JoinUsSection({
               </p>
               <div className="flex items-center justify-between">
                 <button
-                  className="bg-secondary text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-full border-2 border-secondary font-semibold hover:border-gray-900 hover:bg-transparent transition-all duration-300"
+                  className="bg-secondary text-gray-900 text-sm md:text-base px-4 md:px-6 py-2 md:py-3 rounded-full border-2 border-secondary font-semibold hover:border-gray-900 hover:bg-transparent transition-all duration-300"
                   onClick={() =>
                     onNavigate("riders#application-form")
                   }
@@ -173,7 +173,7 @@ export function JoinUsSection({
               </p>
               <div className="flex items-center justify-between">
                 <button
-                  className="bg-secondary text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded-full border-2 border-secondary font-semibold hover:border-gray-900 hover:bg-transparent transition-all duration-300"
+                  className="bg-secondary text-gray-900 text-sm md:text-base px-4 md:px-6 py-2 md:py-3 rounded-full border-2 border-secondary font-semibold hover:border-gray-900 hover:bg-transparent transition-all duration-300"
                   onClick={() => onNavigate("careers")}
                 >
                   {t('home.joinUsCareersButton')}

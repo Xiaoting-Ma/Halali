@@ -4,13 +4,11 @@ import { Header } from "@/app/components/Header";
 import { Footer } from "@/app/components/Footer";
 import { HomePage } from "@/app/components/HomePage";
 import { MerchantsPage } from "@/app/components/MerchantsPage";
-import { MerchantSuccessPage } from "@/app/components/MerchantSuccessPage";
+import { SubmittedSuccessPage } from "@/app/components/SubmittedSuccessPage";
 import { RidersPage } from "@/app/components/RidersPage";
-import { RiderSuccessPage } from "@/app/components/RiderSuccessPage";
 import { BusinessPage } from "@/app/components/BusinessPage";
-import { AboutPage } from "@/app/components/AboutPage";
+// import { AboutPage } from "@/app/components/AboutPage";
 import { CareersPage } from "@/app/components/CareersPage";
-import { CareerSuccessPage } from "@/app/components/CareerSuccessPage";
 import { ContactPage } from "@/app/components/ContactPage";
 import { PrivacyPolicyPage } from "@/app/components/PrivacyPolicyPage";
 import { LanguageProvider } from "@/app/contexts/LanguageContext";
@@ -99,19 +97,19 @@ export default function App() {
         case "merchants":
           return <MerchantsPage onNavigate={navigate} />;
         case "merchant-success":
-          return <MerchantSuccessPage onNavigate={navigate} />;
+          return <SubmittedSuccessPage onNavigate={navigate} />;
         case "riders":
           return <RidersPage onNavigate={navigate} />;
         case "rider-success":
-          return <RiderSuccessPage onNavigate={navigate} />;
+          return <SubmittedSuccessPage onNavigate={navigate} />;
         case "business":
           return <BusinessPage onNavigate={navigate} />;
-        case "about":
-          return <AboutPage />;
+        // case "about":
+        //   return <AboutPage />;
         case "careers":
           return <CareersPage onNavigate={navigate} />;
         case "career-success":
-          return <CareerSuccessPage onNavigate={navigate} />;
+          return <SubmittedSuccessPage onNavigate={navigate} />;
         case "contact":
           return <ContactPage onNavigate={navigate} />;
         case "privacy-policy":

@@ -53,6 +53,7 @@ export function MerchantsPage({
     contactName: "",
     email: "",
     phone: "",
+    city: "",
     address: "",
     halalStatus: "",
     halalInfo: "",
@@ -170,6 +171,12 @@ export function MerchantsPage({
       title: t("merchants.benefit4Title"),
       description: t("merchants.benefit4Desc"),
     },
+  ];
+
+  const cities = [
+    "Sydney",
+    "Melbourne",
+    "Other",
   ];
 
   return (
@@ -377,6 +384,38 @@ export function MerchantsPage({
                       }
                       className="mt-1"
                     />
+                  </div>
+                  <div>
+                    <Label
+                      htmlFor="city"
+                      className="text-white"
+                    >
+                      {t("riders.city")} *
+                    </Label>
+                    <Select
+                      value={formData.city}
+                      onValueChange={(value) =>
+                        setFormData({
+                          ...formData,
+                          city: value,
+                        })
+                      }
+                    >
+                      <SelectTrigger className="mt-1">
+                        <SelectValue
+                          placeholder={t(
+                            "riders.cityPlaceholder",
+                          )}
+                        />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {cities.map((city) => (
+                          <SelectItem key={city} value={city}>
+                            {city}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
                   </div>
                   <div>
                     <Label

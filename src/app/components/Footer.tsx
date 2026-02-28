@@ -146,12 +146,6 @@ export function Footer() {
               >
                 {t("footer.privacy")}
               </a>
-              <a
-                href="#"
-                className="hover:text-secondary transition-colors"
-              >
-                {t("footer.terms")}
-              </a>
             </div>
           </div>
         </div>

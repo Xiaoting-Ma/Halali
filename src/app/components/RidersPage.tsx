@@ -1,9 +1,4 @@
-import {
-  Clock,
-  FileCheck,
-  Wallet,
-  Download,
-} from "lucide-react";
+
 import { Button } from "@/app/components/ui/button";
 import { Card, CardContent } from "@/app/components/ui/card";
 import { SEO } from "@/app/components/SEO";
@@ -144,13 +139,8 @@ export function RidersPage({ onNavigate }: RidersPageProps) {
   ];
 
   const cities = [
-    "Adelaide",
-    "Brisbane",
-    "Canberra",
-    "Gold Coast",
-    "Melbourne",
-    "Perth",
     "Sydney",
+    "Melbourne",
     "Other",
   ];
   const vehicles = ["Car", "Motorbike", "Bicycle", "E-bike"];
