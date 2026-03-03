@@ -1,0 +1,55 @@
+[debug] [2026-03-01T07:01:50.131Z] ----------------------------------------------------------------------
+[debug] [2026-03-01T07:01:50.139Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login
+[debug] [2026-03-01T07:01:50.140Z] CLI Version:   15.7.0
+[debug] [2026-03-01T07:01:50.140Z] Platform:      darwin
+[debug] [2026-03-01T07:01:50.140Z] Node Version:  v22.14.0
+[debug] [2026-03-01T07:01:50.140Z] Time:          Sun Mar 01 2026 15:01:50 GMT+0800 (China Standard Time)
+[debug] [2026-03-01T07:01:50.141Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  The Firebase CLI’s MCP server feature can optionally make use of Gemini in Firebase. Learn more about Gemini in Firebase and how it uses your data: https://firebase.google.com/docs/gemini-in-firebase#how-gemini-in-firebase-uses-your-data 
+[info] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=408675943&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2026-03-01T07:02:21.897Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2026-03-01T07:02:21.898Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2026-03-01T07:03:37.276Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------95fa426340335a8d1a02c28f","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: 
+[debug] [2026-03-01T07:03:37.280Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:279:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2026-03-01T07:03:37.297Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2026-03-01T07:03:37.297Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"b14c2842-45fe-4f33-955e-ad4df7116673"}
+[debug] [2026-03-01T07:03:38.735Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2026-03-01T07:03:38.736Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"1tBDhosw0CMPGJeRVm63jqV2LN0DOSrMnsytmP_KxOE"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    B14C2
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=UzloghjqODRW0u-htU4mhspkzWnrym7w5PZJ0b8Opc4&session=b14c2842-45fe-4f33-955e-ad4df7116673&attest=1tBDhosw0CMPGJeRVm63jqV2LN0DOSrMnsytmP_KxOE
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
+[debug] [2026-03-03T14:37:41.328Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (/usr/local/lib/node_modules/firebase-tools/node_modules/@inquirer/core/dist/commonjs/lib/create-prompt.js:101:37)
+    at Interface.emit (node:events:518:28)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1124:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:263:20)
+    at ReadStream.emit (node:events:530:35)
+    at emitKeys (node:internal/readline/utils:370:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+    at ReadStream.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+[error] 
+[error] Error: An unexpected error has occurred.
