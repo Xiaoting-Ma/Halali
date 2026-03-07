@@ -3,7 +3,7 @@ import image_a98688277141ad8bb9ed7ba7e5cbdb1dbed9f6de from "@/assets/a9868827714
 import image_ea95c922d375c344920677c56d265bd2d1dd0b8d from "@/assets/ea95c922d375c344920677c56d265bd2d1dd0b8d.png";
 import image_b0f5c5c46549dca2b0592ef87e9763eac19929f7 from "@/assets/b0f5c5c46549dca2b0592ef87e9763eac19929f7.png";
 import image_b2afb546cf9746288a96e40c40b608c774bfdd66 from "@/assets/b2afb546cf9746288a96e40c40b608c774bfdd66.png";
-import image_1977a1f727a7a31176a60c5a29170bfc33b3d875 from "@/assets/1977a1f727a7a31176a60c5a29170bfc33b3d875.png";
+import about_halali from "@/assets/about-halali.png";
 import image_cea12cb7011ab12e2167b4cadd624bdd075b4c0f from "@/assets/cea12cb7011ab12e2167b4cadd624bdd075b4c0f.png";
 
 // Partner Logos
@@ -953,7 +953,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <div className="w-16 h-16 mr-2 flex items-center justify-center">
                   <img
                     src={
-                      image_1977a1f727a7a31176a60c5a29170bfc33b3d875
+                      about_halali
                     }
                     alt="Halali Support"
                     className="w-full h-full object-contain"
