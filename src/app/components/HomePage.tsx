@@ -152,7 +152,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             >
               {/* ⬇️⬇️⬇ 在这里放你的视频链接 ⬇️⬇️⬇️ */}
               <source
-                src="/bg-video.mp4"
+                src="/halali_website_video.mov"
                 type="video/mp4"
               />
             </video>
