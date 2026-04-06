@@ -1,0 +1,38 @@
+# Halali
+
+> Halali is a fully halal food delivery platform focused on trusted halal dining, listing only fully halal restaurants and excluding semi-halal or mixed-kitchen models.
+
+## Main Pages
+
+- [Home](https://halali.co/): Overview of Halali's fully halal food delivery service, trust model, app flow, and commitment to clear halal dining choices in Australia.
+- [About Halali](https://halali.co/#business): Explains Halali's mission, fully halal positioning, in-person verification process, compliance standards, and trusted platform model.
+
+## Products & Services
+
+- [Merchants](https://halali.co/#merchants): For fully halal-certified restaurants that want to join Halali, with onboarding steps, partner setup, and a clear no-semi-halal positioning.
+- [Riders](https://halali.co/#riders): For delivery riders who want flexible work, rider app information, and application options.
+
+## Company
+
+- [Careers](https://halali.co/#careers): Hiring information, operating cities, role summaries, and instructions for applying to Halali.
+- [Contact](https://halali.co/#contact): Contact paths for business partnerships, careers, user support, media inquiries, merchant onboarding, and rider applications.
+
+## Legal
+
+- [Privacy Policy](https://halali.co/#privacy-policy): Privacy and data handling information for Halali users, partners, and platform operations.
+
+## Key Facts
+
+- Industry: Fully halal food delivery and halal verification platform
+- Headquarters: Sydney, Australia
+- Current market: Australia
+- Current launch status: Public site states Halali is currently open in Sydney
+- Audiences served: customers, halal-certified restaurants, riders, and city or country partners
+- Core promise: trusted halal dining built around fully halal restaurants, not semi-halal or mixed kitchens
+- Verification model: Halali verifies existing halal credentials in person and displays verified halal information in the app
+
+## Contact
+
+- Website: https://halali.co
+- General contact: contact@halali.co
+- Careers: careers@halali.co

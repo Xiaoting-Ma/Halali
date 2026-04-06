@@ -1,0 +1,52 @@
+# Halali
+
+> Halali is a fully halal food delivery platform focused on trusted halal dining, listing only fully halal restaurants and excluding semi-halal or mixed-kitchen models.
+
+## Main Pages
+
+- [Home](https://halali.co/): Primary landing page for Halali. Summarizes the fully halal customer value proposition, trusted dining promise, app ordering flow, verification messaging, and current operating position in Australia.
+- [About Halali](https://halali.co/#business): Business overview page describing Halali as a complete system for users, merchants, riders, and operations. Includes mission framing, fully halal positioning, compliance messaging, and expansion language.
+
+## Verification & Trust
+
+- [About Halali](https://halali.co/#business): Details Halali's verification model. States that Halali does not issue certificates but independently verifies restaurants that already hold halal credentials and presents itself around fully halal participation only.
+- [Home](https://halali.co/): Introduces the trust model, customer-facing halal confidence messaging, and the platform's emphasis on trusted halal dining without semi-halal ambiguity.
+
+## Merchant Growth
+
+- [Merchants](https://halali.co/#merchants): Merchant acquisition page for fully halal-certified restaurants. Covers why restaurants should join, partner visibility, onboarding flow, and operational setup requirements aligned with a no-semi-halal positioning.
+- [Contact](https://halali.co/#contact): Includes merchant-related contact options, city or country partnership context, and a direct path to merchant onboarding.
+
+## Rider Operations
+
+- [Riders](https://halali.co/#riders): Rider recruitment page with rider app messaging, flexible work positioning, and instructions for joining Halali as a delivery rider.
+- [Contact](https://halali.co/#contact): Includes a direct rider path for applications and support questions related to delivery operations.
+
+## Careers
+
+- [Careers](https://halali.co/#careers): Lists Halali as a growing startup, highlights operating cities such as Sydney and Melbourne, and provides recruiting language plus application guidance.
+- [Contact](https://halali.co/#contact): Includes career and recruitment inquiry routing in addition to the dedicated careers page.
+
+## Contact
+
+- [Contact](https://halali.co/#contact): Central page for business partnerships, careers and recruitment, user support, media and press inquiries, merchant onboarding, and rider applications.
+
+## Legal
+
+- [Privacy Policy](https://halali.co/#privacy-policy): Legal page covering privacy and data handling expectations for the platform.
+
+## Key Facts
+
+- Industry: Fully halal food delivery and restaurant verification
+- Headquarters: Sydney, Australia
+- Current market statement: The public site states Halali is currently operating across Australia and currently open in Sydney
+- Expansion language: The site references additional city and country partners and broader international ambitions
+- Core audiences: customers, halal-certified restaurants, riders, careers candidates, and business partners
+- Core promise: trusted halal dining built around fully halal restaurants rather than semi-halal or mixed kitchens
+- Verification model: In-person verification of existing halal credentials and transparent display of verified halal information
+
+## Contact
+
+- Website: https://halali.co
+- General contact: contact@halali.co
+- Careers: careers@halali.co
