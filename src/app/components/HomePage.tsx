@@ -5,6 +5,7 @@ import image_b0f5c5c46549dca2b0592ef87e9763eac19929f7 from "@/assets/b0f5c5c4654
 import image_b2afb546cf9746288a96e40c40b608c774bfdd66 from "@/assets/b2afb546cf9746288a96e40c40b608c774bfdd66.png";
 import image_1977a1f727a7a31176a60c5a29170bfc33b3d875 from "@/assets/1977a1f727a7a31176a60c5a29170bfc33b3d875.png";
 import image_cea12cb7011ab12e2167b4cadd624bdd075b4c0f from "@/assets/cea12cb7011ab12e2167b4cadd624bdd075b4c0f.png";
+import LazyLoad from "react-lazyload";
 
 // Partner Logos
 import logoANZ from "@/assets/9e8d9e425d1e08521872332b44495fba3149ede7.png";
@@ -93,13 +94,25 @@ import { useTranslation } from "@/app/hooks/useTranslation";
 import { useState, useRef } from "react";
 import { motion } from "motion/react";
 import { JoinUsSection } from "./JoinUsSection";
+import { useParams, useNavigate } from "react-router";
 
 interface HomePageProps {
-  onNavigate: (page: string) => void;
+  onNavigate?: (page: string) => void;
 }
 
-export function HomePage({ onNavigate }: HomePageProps) {
+export function HomePage({ onNavigate }: HomePageProps = {}) {
   const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
+  const navigate = useNavigate();
+  const currentLang = lang || "en";
+
+  const handleNavigate = (page: string) => {
+    if (onNavigate) {
+      onNavigate(page);
+    } else {
+      navigate(`/${currentLang}/${page}`);
+    }
+  };
   const [videoError, setVideoError] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isOrderImageHovered, setIsOrderImageHovered] =
@@ -134,6 +147,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <section className="relative text-white overflow-hidden">
         {/* Video Background (First Priority) */}
         {!videoError && (
+          <LazyLoad offset={100} once>
           <div className="absolute inset-0">
             <video
               ref={videoRef}
@@ -157,6 +171,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               />
             </video>
           </div>
+          </LazyLoad>
         )}
 
         {/* Fallback Background Image (When Video Fails) */}
@@ -193,14 +208,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <Button
                 size="lg"
                 variant="outline"
-                onClick={() => onNavigate("home#downloads")}
+                onClick={() => handleNavigate("home#downloads")}
                 className="bg-primary border-2 border-primary text-gray-900 hover:bg-transparent hover:border-gray-100 hover:text-white text-lg px-8"
               >
                 {t("home.downloadApp")}
               </Button>
               <Button
                 size="lg"
-                onClick={() => onNavigate("merchants")}
+                onClick={() => handleNavigate("merchants")}
                 className="bg-gray-900 border-2 border-gray-900 text-white hover:bg-transparent hover:border-gray-100 hover:text-white text-lg px-8"
               >
                 {t("home.joinMerchant")}
@@ -477,7 +492,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   </p>
                   <button
                     className="bg-primary text-gray-700 px-3 md:px-6 py-2 md:py-3 mb-6 md:mb-0 md:mt-2 rounded-full border-2 border-primary font-semibold hover:bg-gray-300 hover:border-gray-700 transition-all duration-300"
-                    onClick={() => onNavigate("home#downloads")}
+                    onClick={() => handleNavigate("home#downloads")}
                   >
                     {t('home.getTheApp')}
                   </button>
@@ -499,7 +514,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   </h3>
                   <button
                     className="bg-primary text-gray-700 px-6 py-2 md:py-3 mb-6 md:mb-0 md:mt-8 rounded-full border-2 border-primary font-semibold hover:bg-gray-300 hover:border-gray-700 transition-all duration-300"
-                    onClick={() => onNavigate("home#downloads")}
+                    onClick={() => handleNavigate("home#downloads")}
                   >
                     {t('home.getTheApp')}
                   </button>
@@ -517,7 +532,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   </p>
                   <button
                     className="bg-primary text-gray-700 px-6 py-2 md:py-3 mb-6 md:mb-0 md:mt-8 rounded-full border-2 border-primary font-semibold hover:bg-gray-300 hover:border-gray-700 transition-all duration-300"
-                    onClick={() => onNavigate("home#downloads")}
+                    onClick={() => handleNavigate("home#downloads")}
                   >
                     {t('home.getTheApp')}
                   </button>
@@ -866,7 +881,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Join Us Section */}
-      <JoinUsSection onNavigate={onNavigate} />
+      <JoinUsSection onNavigate={handleNavigate} />
 
       {/* About Halali Section */}
       <section className="bg-white">

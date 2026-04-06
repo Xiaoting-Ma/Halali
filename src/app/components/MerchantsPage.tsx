@@ -39,14 +39,27 @@ const onboardingIcon2 =
 const onboardingIcon3 =
   image_95e7c123097257514483210cfbc5d2543b92a73e;
 
+import { useParams, useNavigate } from "react-router";
+
 interface MerchantsPageProps {
-  onNavigate: (page: string) => void;
+  onNavigate?: (page: string) => void;
 }
 
 export function MerchantsPage({
   onNavigate,
-}: MerchantsPageProps) {
+}: MerchantsPageProps = {}) {
   const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
+  const navigate = useNavigate();
+  const currentLang = lang || "en";
+
+  const handleNavigate = (page: string) => {
+    if (onNavigate) {
+      onNavigate(page);
+    } else {
+      navigate(`/${currentLang}/${page}`);
+    }
+  };
 
   const [formData, setFormData] = useState({
     restaurantName: "",
@@ -121,7 +134,7 @@ export function MerchantsPage({
       );
       if (response.ok) {
         setSubmitStatus("success");
-        onNavigate("merchant-success");
+        handleNavigate("merchant-success");
       } else {
         setSubmitStatus("error");
       }

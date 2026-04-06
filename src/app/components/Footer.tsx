@@ -1,9 +1,12 @@
 import image_90640b1eca3f984320c37dcc85d73e51335ab2c3 from "@/assets/90640b1eca3f984320c37dcc85d73e51335ab2c3.png";
 import { useTranslation } from "@/app/hooks/useTranslation";
+import { useParams, Link } from "react-router";
 import halaliLogo from "@/assets/17b1b5a6492da9d806399108417a42d3d13d854e.png";
 
 export function Footer() {
   const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
+  const currentLang = lang || "en";
 
   return (
     <footer className="bg-primary border-t border-gray-200">
@@ -49,62 +52,62 @@ export function Footer() {
             <div className="grid grid-cols-2 gap-x-8">
               <ul className="space-y-1 text-base text-gray-700">
                 <li>
-                  <a
-                    href="#home"
+                  <Link
+                    to={`/${currentLang}/home`}
                     className="hover:text-secondary transition-colors"
                   >
                     {t("header.home")}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#merchants"
+                  <Link
+                    to={`/${currentLang}/merchants`}
                     className="hover:text-secondary transition-colors"
                   >
                     {t("header.merchants")}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#riders"
+                  <Link
+                    to={`/${currentLang}/riders`}
                     className="hover:text-secondary transition-colors"
                   >
                     {t("header.riders")}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#business"
+                  <Link
+                    to={`/${currentLang}/business`}
                     className="hover:text-secondary transition-colors"
                   >
                     {t("header.business")}
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <ul className="space-y-1 text-base text-gray-700">
                 <li>
-                  <a
-                    href="#about"
+                  <Link
+                    to={`/${currentLang}/about`}
                     className="hover:text-secondary transition-colors"
                   >
                     {t("header.about")}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#careers"
+                  <Link
+                    to={`/${currentLang}/careers`}
                     className="hover:text-secondary transition-colors"
                   >
                     {t("header.careers")}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#contact"
+                  <Link
+                    to={`/${currentLang}/contact`}
                     className="hover:text-secondary transition-colors"
                   >
                     {t("header.contact")}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -139,13 +142,12 @@ export function Footer() {
               {t("footer.copyright")}
             </p>
             <div className="flex space-x-6 text-sm text-gray-700">
-              <a
-                href="#privacy-policy"
-                target="_blank"
+              <Link
+                to={`/${currentLang}/privacy-policy`}
                 className="hover:text-secondary transition-colors"
               >
                 {t("footer.privacy")}
-              </a>
+              </Link>
             </div>
           </div>
         </div>

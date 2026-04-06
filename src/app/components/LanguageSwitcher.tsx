@@ -1,5 +1,6 @@
 import { Globe, Check } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router";
 import { Button } from "@/app/components/ui/button";
 import {
   useLanguage,
@@ -16,6 +17,8 @@ export function LanguageSwitcher({
   const { currentLanguage, setLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -46,6 +49,15 @@ export function LanguageSwitcher({
   const handleLanguageSelect = (code: string) => {
     setLanguage(code);
     setIsOpen(false);
+    // Update URL with new language
+    const pathParts = location.pathname.split("/").filter(Boolean);
+    if (pathParts.length > 0) {
+      // Replace the language part in the URL
+      pathParts[0] = code;
+      navigate(`/${pathParts.join("/")}`, { replace: true });
+    } else {
+      navigate(`/${code}/home`, { replace: true });
+    }
   };
 
   if (variant === "mobile") {

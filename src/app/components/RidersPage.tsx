@@ -20,13 +20,25 @@ import heroBackground from "@/assets/19f259a93cb63abbf4c1607f6e7cc2c109f5c9d8.pn
 import iconBackpack from "@/assets/c1ae1b1ce7fe3487a4b5bd15874a2a2a5be7ed68.png";
 import iconShoppingBag from "@/assets/ca3cec3398d58ec9817687fa281e963df18a3967.png";
 import iconGlobe from "@/assets/0e22f7227bfc767a487c0e54a88c5f93b6598fb4.png";
+import { useParams, useNavigate } from "react-router";
 
 interface RidersPageProps {
-  onNavigate: (page: string) => void;
+  onNavigate?: (page: string) => void;
 }
 
-export function RidersPage({ onNavigate }: RidersPageProps) {
+export function RidersPage({ onNavigate }: RidersPageProps = {}) {
   const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
+  const navigate = useNavigate();
+  const currentLang = lang || "en";
+
+  const handleNavigate = (page: string) => {
+    if (onNavigate) {
+      onNavigate(page);
+    } else {
+      navigate(`/${currentLang}/${page}`);
+    }
+  };
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -109,7 +121,7 @@ export function RidersPage({ onNavigate }: RidersPageProps) {
 
       if (response.ok) {
         setSubmitStatus("success");
-        onNavigate("rider-success");
+        handleNavigate("rider-success");
       } else {
         setSubmitStatus("error");
       }

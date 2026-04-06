@@ -12,14 +12,26 @@ import { Card, CardContent } from "@/app/components/ui/card";
 import { SEO } from "@/app/components/SEO";
 import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "@/app/hooks/useTranslation";
+import { useParams, useNavigate } from "react-router";
 import heroBackground from "@/assets/cd2c41931df388104969a6c1fbbfa92c07870ffe.png";
 
 interface ContactPageProps {
-  onNavigate: (page: string) => void;
+  onNavigate?: (page: string) => void;
 }
 
 export function ContactPage({ onNavigate }: ContactPageProps) {
   const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
+  const navigate = useNavigate();
+  const currentLang = lang || "en";
+
+  const handleNavigate = (page: string) => {
+    if (onNavigate) {
+      onNavigate(page);
+    } else {
+      navigate(`/${currentLang}/${page}`);
+    }
+  };
   const [scale, setScale] = useState(1);
   const heroRef = useRef<HTMLElement>(null);
 
@@ -181,7 +193,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div
               className="hover:-translate-y-1 transition-all duration-300 cursor-pointer"
-              onClick={() => onNavigate("merchants")}
+              onClick={() => handleNavigate("merchants")}
             >
               <div className="bg-primary rounded-lg p-6 text-center">
                 <h3 className="font-semibold text-gray-700 mb-2">
@@ -195,7 +207,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
 
             <div
               className="hover:-translate-y-1 transition-all duration-300 cursor-pointer"
-              onClick={() => onNavigate("riders")}
+              onClick={() => handleNavigate("riders")}
             >
               <div className="bg-primary rounded-lg p-6 text-center">
                 <h3 className="font-semibold text-gray-700 mb-2">
@@ -209,7 +221,7 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
 
             <div
               className="hover:-translate-y-1 transition-all duration-300 cursor-pointer"
-              onClick={() => onNavigate("home#downloads")}
+              onClick={() => handleNavigate("home#downloads")}
             >
               <div className="bg-primary rounded-lg p-6 text-center">
                 <h3 className="font-semibold text-gray-700 mb-2">

@@ -24,17 +24,29 @@ import {
 import { useState, useEffect, useRef } from "react";
 import { useDropzone } from "react-dropzone";
 import { useTranslation } from "@/app/hooks/useTranslation";
+import { useParams, useNavigate } from "react-router";
 import heroBackground from "@/assets/23e724dd31fbcc7f3d17ba7467647596f1eeface.png";
 
 interface CareersPageProps {
-  onNavigate: (page: string) => void;
+  onNavigate?: (page: string) => void;
 }
 
-export function CareersPage({ onNavigate }: CareersPageProps) {
+export function CareersPage({ onNavigate }: CareersPageProps = {}) {
   const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
+  const navigate = useNavigate();
+  const currentLang = lang || "en";
+
+  const handleNavigate = (page: string) => {
+    if (onNavigate) {
+      onNavigate(page);
+    } else {
+      navigate(`/${currentLang}/${page}`);
+    }
+  };
   const [scale, setScale] = useState(1);
   const heroRef = useRef<HTMLElement>(null);
-  const formRef = useRef<HTMLElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [selectedPosition, setSelectedPosition] = useState("");
   const [formData, setFormData] = useState({
@@ -174,7 +186,7 @@ export function CareersPage({ onNavigate }: CareersPageProps) {
 
     // 延迟跳转到成功页面（给表单足够时间提交）
     setTimeout(() => {
-      onNavigate("career-success");
+      handleNavigate("career-success");
     }, 2000);
   };
 

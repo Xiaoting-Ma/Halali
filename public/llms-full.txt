@@ -5,35 +5,43 @@
 ## Main Pages
 
 - [Home](https://halali.co/): Primary landing page for Halali. Summarizes the fully halal customer value proposition, trusted dining promise, app ordering flow, verification messaging, and current operating position in Australia.
-- [About Halali](https://halali.co/#business): Business overview page describing Halali as a complete system for users, merchants, riders, and operations. Includes mission framing, fully halal positioning, compliance messaging, and expansion language.
+- [About Halali](https://halali.co/en/business): Business overview page describing Halali as a complete system for users, merchants, riders, and operations. Includes mission framing, fully halal positioning, compliance messaging, and expansion language.
 
 ## Verification & Trust
 
-- [About Halali](https://halali.co/#business): Details Halali's verification model. States that Halali does not issue certificates but independently verifies restaurants that already hold halal credentials and presents itself around fully halal participation only.
+- [About Halali](https://halali.co/en/business): Details Halali's verification model. States that Halali does not issue certificates but independently verifies restaurants that already hold halal credentials and presents itself around fully halal participation only.
 - [Home](https://halali.co/): Introduces the trust model, customer-facing halal confidence messaging, and the platform's emphasis on trusted halal dining without semi-halal ambiguity.
 
 ## Merchant Growth
 
-- [Merchants](https://halali.co/#merchants): Merchant acquisition page for fully halal-certified restaurants. Covers why restaurants should join, partner visibility, onboarding flow, and operational setup requirements aligned with a no-semi-halal positioning.
-- [Contact](https://halali.co/#contact): Includes merchant-related contact options, city or country partnership context, and a direct path to merchant onboarding.
+- [Merchants](https://halali.co/en/merchants): Merchant acquisition page for fully halal-certified restaurants. Covers why restaurants should join, partner visibility, onboarding flow, and operational setup requirements aligned with a no-semi-halal positioning.
+- [Contact](https://halali.co/en/contact): Includes merchant-related contact options, city or country partnership context, and a direct path to merchant onboarding.
 
 ## Rider Operations
 
-- [Riders](https://halali.co/#riders): Rider recruitment page with rider app messaging, flexible work positioning, and instructions for joining Halali as a delivery rider.
-- [Contact](https://halali.co/#contact): Includes a direct rider path for applications and support questions related to delivery operations.
+- [Riders](https://halali.co/en/riders): Rider recruitment page with rider app messaging, flexible work positioning, and instructions for joining Halali as a delivery rider.
+- [Contact](https://halali.co/en/contact): Includes a direct rider path for applications and support questions related to delivery operations.
 
 ## Careers
 
-- [Careers](https://halali.co/#careers): Lists Halali as a growing startup, highlights operating cities such as Sydney and Melbourne, and provides recruiting language plus application guidance.
-- [Contact](https://halali.co/#contact): Includes career and recruitment inquiry routing in addition to the dedicated careers page.
+- [Careers](https://halali.co/en/careers): Lists Halali as a growing startup, highlights operating cities such as Sydney and Melbourne, and provides recruiting language plus application guidance.
+- [Contact](https://halali.co/en/contact): Includes career and recruitment inquiry routing in addition to the dedicated careers page.
 
 ## Contact
 
-- [Contact](https://halali.co/#contact): Central page for business partnerships, careers and recruitment, user support, media and press inquiries, merchant onboarding, and rider applications.
+- [Contact](https://halali.co/en/contact): Central page for business partnerships, careers and recruitment, user support, media and press inquiries, merchant onboarding, and rider applications.
 
 ## Legal
 
-- [Privacy Policy](https://halali.co/#privacy-policy): Legal page covering privacy and data handling expectations for the platform.
+- [Privacy Policy](https://halali.co/en/privacy-policy): Legal page covering privacy and data handling expectations for the platform.
+
+
+## Guides
+- [Guide](https://halali.co/guides/01-halali-sydney-guide-how-to-find-trusted-halal-restaurants-with-more-confidence.md): Halali Sydney Guide: How to Find Trusted Halal Restaurants With More Confidence.
+- [Guide](https://halali.co/guides/02-halali-melbourne-guide-how-to-find-trusted-halal-restaurants-with-more-confidence.md): Halali Melbourne Guide: How to Find Trusted Halal Restaurants With More Confidence.
+- [Guide](https://halali.co/guides/03-how-to-know-if-a-restaurant-is-really-halal-in-australia.md): How to Know If a Restaurant Is Really Halal in Australia.
+- [Guide](https://halali.co/guides/04-best-halal-restaurants-in-sydney-for-muslim-families-confidence-first-checklist.md): Best Halal Restaurants in Sydney for Muslim Families (Confidence-First Checklist).
+- [Guide](https://halali.co/guides/05-best-halal-restaurants-in-melbourne-for-muslim-families-confidence-first-checklist.md): Best Halal Restaurants in Melbourne for Muslim Families (Confidence-First Checklist).
 
 ## Key Facts
 

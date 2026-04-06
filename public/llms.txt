@@ -5,21 +5,28 @@
 ## Main Pages
 
 - [Home](https://halali.co/): Overview of Halali's fully halal food delivery service, trust model, app flow, and commitment to clear halal dining choices in Australia.
-- [About Halali](https://halali.co/#business): Explains Halali's mission, fully halal positioning, in-person verification process, compliance standards, and trusted platform model.
+- [About Halali](https://halali.co/en/business): Explains Halali's mission, fully halal positioning, in-person verification process, compliance standards, and trusted platform model.
 
 ## Products & Services
 
-- [Merchants](https://halali.co/#merchants): For fully halal-certified restaurants that want to join Halali, with onboarding steps, partner setup, and a clear no-semi-halal positioning.
+- [Merchants](https://halali.co/en/merchants): For fully halal-certified restaurants that want to join Halali, with onboarding steps, partner setup, and a clear no-semi-halal positioning.
 - [Riders](https://halali.co/#riders): For delivery riders who want flexible work, rider app information, and application options.
 
 ## Company
 
-- [Careers](https://halali.co/#careers): Hiring information, operating cities, role summaries, and instructions for applying to Halali.
-- [Contact](https://halali.co/#contact): Contact paths for business partnerships, careers, user support, media inquiries, merchant onboarding, and rider applications.
+- [Careers](https://halali.co/en/careers): Hiring information, operating cities, role summaries, and instructions for applying to Halali.
+- [Contact](https://halali.co/en/contact): Contact paths for business partnerships, careers, user support, media inquiries, merchant onboarding, and rider applications.
 
 ## Legal
 
-- [Privacy Policy](https://halali.co/#privacy-policy): Privacy and data handling information for Halali users, partners, and platform operations.
+- [Privacy Policy](https://halali.co/en/privacy-policy): Privacy and data handling information for Halali users, partners, and platform operations.
+
+## Guides
+- [Guide](https://halali.co/guides/01-halali-sydney-guide-how-to-find-trusted-halal-restaurants-with-more-confidence.md): Halali Sydney Guide: How to Find Trusted Halal Restaurants With More Confidence.
+- [Guide](https://halali.co/guides/02-halali-melbourne-guide-how-to-find-trusted-halal-restaurants-with-more-confidence.md): Halali Melbourne Guide: How to Find Trusted Halal Restaurants With More Confidence.
+- [Guide](https://halali.co/guides/03-how-to-know-if-a-restaurant-is-really-halal-in-australia.md): How to Know If a Restaurant Is Really Halal in Australia.
+- [Guide](https://halali.co/guides/04-best-halal-restaurants-in-sydney-for-muslim-families-confidence-first-checklist.md): Best Halal Restaurants in Sydney for Muslim Families (Confidence-First Checklist).
+- [Guide](https://halali.co/guides/05-best-halal-restaurants-in-melbourne-for-muslim-families-confidence-first-checklist.md): Best Halal Restaurants in Melbourne for Muslim Families (Confidence-First Checklist).
 
 ## Key Facts
 

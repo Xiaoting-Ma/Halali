@@ -4,16 +4,28 @@ import { Card, CardContent } from "@/app/components/ui/card";
 import { SEO } from "@/app/components/SEO";
 import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "@/app/hooks/useTranslation";
+import { useParams, useNavigate } from "react-router";
 import heroBackground from "@/assets/0a1fec1297b7a3803fd53a40f8a24a15a0430a48.png";
 
 interface BusinessPageProps {
-  onNavigate: (page: string) => void;
+  onNavigate?: (page: string) => void;
 }
 
 export function BusinessPage({
   onNavigate,
-}: BusinessPageProps) {
+}: BusinessPageProps = {}) {
   const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
+  const navigate = useNavigate();
+  const currentLang = lang || "en";
+
+  const handleNavigate = (page: string) => {
+    if (onNavigate) {
+      onNavigate(page);
+    } else {
+      navigate(`/${currentLang}/${page}`);
+    }
+  };
   const [scale, setScale] = useState(1);
   const heroRef = useRef<HTMLElement>(null);
 
@@ -83,7 +95,7 @@ export function BusinessPage({
       ],
       cta: t("business.partnership3CTA"),
       button: t("business.partnership3Button"),
-      action: () => onNavigate("merchants"),
+      action: () => handleNavigate("merchants"),
     },
   ];
 

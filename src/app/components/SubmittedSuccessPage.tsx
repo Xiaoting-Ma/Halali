@@ -1,13 +1,28 @@
+import { useTranslation } from "@/app/hooks/useTranslation";
+import { useParams, useNavigate } from "react-router";
 import { CheckCircle, ArrowLeft, Mail } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 
 interface SubmittedSuccessPageProps {
-  onNavigate: (page: string) => void;
+  onNavigate?: (page: string) => void;
 }
 
 export function SubmittedSuccessPage({
   onNavigate,
-}: SubmittedSuccessPageProps) {
+}: SubmittedSuccessPageProps= {}) {
+  const { t } = useTranslation();
+  const { lang } = useParams<{ lang: string }>();
+  const navigate = useNavigate();
+  const currentLang = lang || "en";
+
+  const handleNavigate = (page: string) => {
+    if (onNavigate) {
+      onNavigate(page);
+    } else {
+      navigate(`/${currentLang}/${page}`);
+    }
+  };
+  
   return (
     <div className="min-h-[600px] flex items-center justify-center bg-gray-50 py-16">
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
